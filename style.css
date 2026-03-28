@@ -104,36 +104,43 @@
     
   }
 
-  /* Navbar Typing Test Button */
-  .nav-typing-btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background: #FFA000; /* amber */
-    color: #121212; /* dark text */
-    font-weight: 700;
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(255, 160, 0, 0.6);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    user-select: none;
-    cursor: pointer;
-  }
+  /* Navbar Typing Test Button - Updated to match Enroll Now */
+.nav-typing-btn {
+  display: inline-flex; /* Changed to inline-flex to align icon and text perfectly */
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem; /* Increased padding to match the hero button size */
+  background: #FFC107;  /* Matches your --color-primary variable */
+  color: #000000;       /* Solid black text for better contrast */
+  font-weight: 700;
+  font-size: 1.1rem;    /* Slightly larger font to match primary actions */
+  border-radius: 50px;  /* Same rounded corners */
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4); /* Softer glow to match primary style */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
 
-  .nav-typing-btn:hover,
-  .nav-typing-btn:focus {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(255, 160, 0, 0.8);
-    outline: none;
-  }
+.nav-typing-btn:hover,
+.nav-typing-btn:focus {
+  transform: scale(1.05); /* Gentle scale-up */
+  background-color: #e5ad06; /* Slightly darker amber on hover */
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
+  outline: none;
+}
 
-  .nav-typing-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 3px 10px rgba(255, 160, 0, 0.5);
-  }
+.nav-typing-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 10px rgba(255, 193, 7, 0.3);
+}
 
-  .icon{
-    margin-right: 5px;
-  }
+.icon {
+  margin-right: 8px; /* Slightly more spacing for the keyboard icon */
+  display: flex;
+  align-items: center;
+}
   
   /* Hamburger toggle */
   .hamburger {
