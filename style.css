@@ -116,10 +116,10 @@
   /* Adjust padding to balance the large 1.5rem nav font */
   padding: 0.6rem 1.5rem !important; 
   background-color: var(--color-primary) !important; /* #FFC107 */
-  color: #000000 !important; /* Forces Text and Icon to Black */
+  color: #ffffff !important; /* Forces Text and Icon to Black */
   font-weight: 700;
   font-size: 1.1rem; /* Slightly smaller than nav links to look balanced */
-  border-radius: 50px;
+  border-radius: 65px;
   text-decoration: none;
   box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
