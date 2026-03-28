@@ -81,23 +81,27 @@
 
   /* Nav links - desktop defaults */
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.25rem;
-    opacity: 1; /* visible on desktop */
-    transform: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    pointer-events: auto; /* always interactable on desktop */
-  }
-  .nav-links li a {
-    color: var(--color-text);
-    padding: 0.5rem 0.75rem;
-    border-radius: 4px;
-    opacity: 1;
-    font-weight: 600;
-    pointer-events: auto;
-    font-size: 1.5rem;
-  }
+  list-style: none;
+  display: flex;
+  align-items: center; /* This centers the button with the text links */
+  gap: 1.25rem;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: auto;
+}
+
+.nav-links li a {
+  color: var(--color-text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  opacity: 1;
+  font-weight: 600;
+  pointer-events: auto;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
   /* Removed hover and focus transform scale and background color changes on nav links */
   .nav-links li a.active {
     color: var(--color-primary);
@@ -106,37 +110,34 @@
 
   /* Navbar Typing Test Button - Updated to match Enroll Now */
 .nav-typing-btn {
-  display: inline-block;
-  padding: 0.5rem 0.75rem;
-  background: #FFA000;
-  color: #000000;       /* Solid black text for better contrast */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjust padding to balance the large 1.5rem nav font */
+  padding: 0.6rem 1.5rem !important; 
+  background-color: var(--color-primary) !important; /* #FFC107 */
+  color: #000000 !important; /* Forces Text and Icon to Black */
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.1rem; /* Slightly smaller than nav links to look balanced */
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(255, 160, 0, 0.6);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  user-select: none;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  line-height: 1;
   border: none;
 }
 
-.nav-typing-btn:hover,
-.nav-typing-btn:focus {
-  transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(255, 160, 0, 0.8);
-  outline: none;
+.nav-typing-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
+  color: #000000 !important;
 }
 
-.nav-typing-btn:active {
-  transform: scale(0.95);
-  box-shadow: 0 3px 10px rgba(255, 160, 0, 0.5);
-}
-
-.icon {
-  margin-right: 8px; /* Slightly more spacing for the keyboard icon */
-  display: flex;
-  align-items: center;
+/* Ensure the icon inside is also black */
+.nav-typing-btn .icon i {
+  color: #000000 !important;
+  margin-right: 8px;
 }
   
   /* Hamburger toggle */
