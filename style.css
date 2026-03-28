@@ -111,7 +111,7 @@
   /* Navbar Typing Test Button - Updated to match Enroll Now */
 .nav-typing-btn {
   background-color: var(--color-primary) !important; /* Amber Yellow */
-  color: #ffffff !important; /* FORCES TEXT TO WHITE */
+  color: #000000 !important; /* FORCES TEXT TO BLACK */
   padding: 0.6rem 1.5rem !important;
   border-radius: 50px !important; /* Same round corner as Enroll Now */
   font-weight: 700 !important;
